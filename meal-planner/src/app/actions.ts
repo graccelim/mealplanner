@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache"
 import type { Ingredient } from "@/lib/types"
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://meal-planner-kappa-blond.vercel.app";
 // const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 export async function generateMealPlan(ingredients: string[], numberOfMeals: number) {
