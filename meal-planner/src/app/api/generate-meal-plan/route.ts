@@ -3,6 +3,8 @@ import { HfInference } from '@huggingface/inference';
 
 const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
 
+export const maxDuration = 30;
+
 export async function POST(request: Request) {
   try {
     const { ingredients, numberOfMeals } = await request.json();
